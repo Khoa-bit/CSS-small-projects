@@ -1,0 +1,18 @@
+:checked ~ .toggle__decor {
+  background: rebeccapurple;
+}
+
+:checked ~ .toggle__decor .toggle__thumb {
+  background: rebeccapurple;
+  transform: translateX(var(--metric-toggle-thumb-size)) rotate(270deg);
+}
+
+.container {
+  display: flex;
+  background-color: lightblue;
+  flex-direction: row;
+}
+
+.box {
+  flex-grow: 1;
+}

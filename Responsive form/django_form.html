@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="django_form.css">
+</head>
+<body>
+    <form action="." method="POST">
+        <input type="hidden" name="csrfmiddlewaretoken" value="7o2BlQrJzVZYjSUjjmCXnZQgqJG1yXvDI3dfuhshr5kgcWQo3BpTCzk7J5QiKRrg">
+        <p><label for="id_title">Title:</label> <input type="text" name="title" placeholder="Announcement Title" required="" id="id_title"></p>
+  <p><label for="id_content">Content:</label> <textarea name="content" cols="40" rows="10" placeholder="Announcement Content" required="" id="id_content"></textarea></p>
+        <input type="Submit" value="Save">
+      </form>
+</body>
+</html>

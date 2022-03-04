@@ -1,0 +1,38 @@
+@use "base";
+
+.body-grid {
+  display: grid;
+
+  grid-template-columns: max-content 1fr;  
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  min-height: 10rem;
+  background-color: aquamarine;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: cornflowerblue;
+  
+  
+}
+
+.content {
+  grid-area: content;
+  min-height: 200rem;
+  background-color: bisque;
+}
+
+.footer {
+  grid-area: footer;
+  min-height: 10rem;
+  background-color: dodgerblue;
+}

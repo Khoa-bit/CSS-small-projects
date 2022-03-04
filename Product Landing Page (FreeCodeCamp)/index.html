@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+
+    <style>
+      #header {
+        /* Position on top and match static html blocks with 8px for left and right */
+        position: fixed;
+        background-color: white;
+        top: 0px;
+        left: 8px;
+        right: 8px;
+        display: flex;
+        min-height: 50px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      #header-img {
+        height: 100%;
+        max-width: 300px;
+      }
+
+      #nav-bar {
+        margin-inline-start: auto;
+        width: 40vw;
+      }
+
+      #nav-bar > ul {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: unset;
+      }
+
+      #nav-bar > ul > li {
+        list-style: none;
+      }
+
+      main {
+        /* Margin = header's height + 10px */
+        margin-block-start: 60px;
+      }
+
+      @media (max-width: 750px) {
+        main {
+          /* Margin = header's height + 4 * li + 10px */
+          margin-block-start: 120px;
+        }
+
+        #header {
+          flex-direction: column;
+        }
+
+        #nav-bar {
+          margin-inline: auto;
+        }
+
+        #nav-bar > ul {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+        alt="Original Trombones' logo"
+      />
+      <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#feature">Feature</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>Handcrafted, home-made masterpieces</h2>
+        <form
+          id="form"
+          action="https://www.freecodecamp.com/email-submit"
+          method="post"
+        >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
+
+          <input id="submit" type="submit" value="Get Started" />
+        </form>
+      </section>
+      <section id="feature">
+        <ol>
+          <li>
+            <h2>Premium Materials</h2>
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </li>
+          <li>
+            <h2>Fast Shipping</h2>
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </li>
+          <li>
+            <h2>Quality Assurance</h2>
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </li>
+        </ol>
+      </section>
+      <section id="how-it-works">
+        <iframe
+          id="video"
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        >
+        </iframe>
+      </section>
+      <section id="pricing">
+        <ol>
+          <li>
+            <h2>Tenor Trombone</h2>
+            <strong>$600</strong>
+            Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          </li>
+          <li>
+            <h2>Bass Trombone</h2>
+            <strong>$900</strong>
+            Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.
+          </li>
+          <li>
+            <h2>Valve Trombone</h2>
+            <strong>$1200</strong>
+            Plays similar to a Trumpet Great for Jazz Bands Lorem ipsum dolor.
+            Lorem ipsum.
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+@use "base";
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #15191b, #282c34);
+
+  svg {
+    width: 1400;
+    height: 600;
+    color: rgb(212, 210, 208);
+
+    #Signature {
+      $signingDuration: 7s;
+
+      #AnhKhoa {
+        stroke-dasharray: 3542;
+        stroke-dashoffset: -3542;
+        animation: sign $signingDuration ease forwards;
+        animation-delay: 1s;
+      }
+
+      #Underline {
+        stroke-dasharray: 688;
+        stroke-dashoffset: 688;
+        animation: sign 1s ease forwards;
+        animation-delay: $signingDuration;
+      }
+    }
+
+    @keyframes sign {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}

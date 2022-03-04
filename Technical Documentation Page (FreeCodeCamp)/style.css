@@ -1,0 +1,82 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  grid-template-areas: "sidebar content";
+}
+
+body > header {
+  grid-area: sidebar;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px; /* equals to width of the sidebar column */
+}
+
+.sidebar > header {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar > ul {
+  height: 85vh; /* Header takes up 15vh */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar > ul > li {
+  border-block-start: 1px solid black;
+  padding-block: 20px;
+  padding-inline-start: 20px;
+  width: 100%;
+  list-style: none;
+}
+
+body > main {
+  grid-area: content;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 400px 1fr;
+    grid-template-areas:
+      "sidebar"
+      "content";
+  }
+
+  body > header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar {
+    position: relative;
+    box-sizing: border-box;
+    height: 80%;
+    width: 80%;
+    border: 2px solid black;
+  }
+
+  .sidebar > header {
+    height: 20%;
+  }
+
+  .sidebar > ul {
+    height: 80%;
+  }
+}

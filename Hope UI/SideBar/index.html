@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SideBar</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <input id="orange-theme" class="orange theme-checkbox" type="checkbox">
+  <label class="theme-label" for="orange-theme">Toggle Orange</label>
+
+  <input id="pink-theme" class="pink theme-checkbox" type="checkbox">
+  <label class="theme-label" for="pink-theme">Toggle Pink</label>
+
+  <input id="green-theme" class="green theme-checkbox" type="checkbox">
+  <label class="theme-label" for="green-theme">Toggle Green</label>
+
+  <input id="purple-theme" class="purple theme-checkbox" type="checkbox">
+  <label class="theme-label" for="purple-theme">Toggle Purple</label>
+
+  <aside>
+    <div class="block-toggle"></div>
+    <div class="sidebar-toggle">
+      <i class="icon" tabindex="0">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.25 12.2744L19.25 12.2744" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path d="M10.2998 18.2988L4.2498 12.2748L10.2998 6.24976" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </i>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <!-- Sidebar Brand Starts -->
+        <a class="navbar-brand" href="#">
+          <svg class="" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)"
+              fill="currentColor"></rect>
+            <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)"
+              fill="currentColor"></rect>
+            <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)"
+              fill="currentColor"></rect>
+            <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)"
+              fill="currentColor"></rect>
+          </svg>
+          <h4 class="logo-title">Hope UI</h4>
+        </a>
+        <!-- Sidebar Brand Ends -->
+      </div>
+      <div class="sidebar-body">
+        <!-- Sidebar Menu Starts -->
+        <ul class="navbar-nav">
+          <li class="nav-item static-item" tabindex="-1">
+            <span class="default-icon">Home</span>
+            <span class="mini-icon">-</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="home-alt" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                class="svg-inline--fa fa-home-alt fa-w-18 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M336 463.58v-95.64a16 16 0 0 0-16-16h-64a16 16 0 0 0-16 16v95.71a16 16 0 0 1-15.92 16l-112.08.29a16 16 0 0 1-16-16V300.05L280.39 148.2a12.19 12.19 0 0 1 15.3 0L480 299.94v164a16 16 0 0 1-16 16l-112-.31a16 16 0 0 1-16-16.05z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M530.92 300.94L295.69 107.2a12.19 12.19 0 0 0-15.3 0L45.17 300.94a12 12 0 0 1-16.89-1.64l-25.5-31a12 12 0 0 1 1.61-16.89l253.1-208.47a48 48 0 0 1 61 0l253.13 208.47a12 12 0 0 1 1.66 16.89l-25.5 31a12 12 0 0 1-16.86 1.64z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="id-card" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                class="svg-inline--fa fa-id-card fa-w-18 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M0 128v304a48 48 0 0 0 48 48h480a48 48 0 0 0 48-48V128zm176 64a64 64 0 1 1-64 64 64 64 0 0 1 64-64zm93.3 224H82.7c-10.4 0-18.8-10-15.6-19.8A64.09 64.09 0 0 1 128 352h8.2a103 103 0 0 0 79.6 0h8.2a64.09 64.09 0 0 1 60.9 44.2c3.2 9.9-5.2 19.8-15.6 19.8zM512 344a8 8 0 0 1-8 8H360a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8zm0-64a8 8 0 0 1-8 8H360a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8zm0-64a8 8 0 0 1-8 8H360a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M224 352h-8.2a103 103 0 0 1-79.6 0H128a64.09 64.09 0 0 0-60.9 44.2C63.9 406 72.3 416 82.7 416h186.6c10.4 0 18.8-9.9 15.6-19.8A64.09 64.09 0 0 0 224 352zM528 32H48A48 48 0 0 0 0 80v48h576V80a48 48 0 0 0-48-48zM176 320a64 64 0 1 0-64-64 64 64 0 0 0 64 64z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">ID Card</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="map-marked" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                class="svg-inline--fa fa-map-marked fa-w-18 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M288 359.67a47.78 47.78 0 0 1-36.51-17C231.83 319.51 210.92 293.09 192 266v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72A47.8 47.8 0 0 1 288 359.67zM20.12 216A32 32 0 0 0 0 245.66V496a16 16 0 0 0 21.94 14.86L160 448V214.92a302.84 302.84 0 0 1-21.25-46.42zm533.94-54.79L416 224v288l139.88-55.95A32 32 0 0 0 576 426.34V176a16 16 0 0 0-21.94-14.84z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M414 126c0 56.26-82.35 158.8-113.9 196a15.77 15.77 0 0 1-24.2 0C244.35 284.8 162 182.26 162 126a126 126 0 0 1 252 0z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Map</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="sparkles" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="svg-inline--fa fa-sparkles fa-w-16 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M423.16 186.58L448 127l59.58-24.84a8 8 0 0 0 0-14.32L448 63 423.16 3.42a8 8 0 0 0-14.32 0L384 63l-59.58 24.84a8 8 0 0 0 0 14.32L384 127l24.84 59.58a8 8 0 0 0 14.32 0zm-14.32 136.84L384 383l-59.58 24.84a8 8 0 0 0 0 14.32L384 447l24.84 59.58a8 8 0 0 0 14.32 0L448 447l59.58-24.84a8 8 0 0 0 0-14.32L448 383l-24.84-59.58a8 8 0 0 0-14.32 0z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M384 254.64a16.06 16.06 0 0 0-8.84-14.33l-112.57-56.39-56.28-112.77c-5.44-10.87-23.19-10.87-28.62 0l-56.28 112.77L8.84 240.31a16 16 0 0 0 0 28.67l112.57 56.39 56.28 112.77a16 16 0 0 0 28.62 0l56.28-112.77L375.16 269a16.07 16.07 0 0 0 8.84-14.36z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Sparkles</span>
+            </a>
+          </li>
+          <li class="nav-item static-item" tabindex="-1">
+            <span class="default-icon">Statistics</span>
+            <span class="mini-icon">-</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="warehouse" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"
+                class="svg-inline--fa fa-warehouse fa-w-20 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M504 448H136.1a8 8 0 0 0-8 8l-.1 48a8 8 0 0 0 8 8h368a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8zm0-192H136.6a8 8 0 0 0-8 8l-.1 48a8 8 0 0 0 8 8H504a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8zm0 96H136.4a8 8 0 0 0-8 8l-.1 48a8 8 0 0 0 8 8H504a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M640 161.28V504a8 8 0 0 1-8 8h-80a8 8 0 0 1-8-8V256c0-17.6-14.6-32-32.6-32H128.6c-18 0-32.6 14.4-32.6 32v248a8 8 0 0 1-8 8H8a8 8 0 0 1-8-8V161.28A48.11 48.11 0 0 1 29.5 117l272-113.3a48.06 48.06 0 0 1 36.9 0L610.5 117a48.11 48.11 0 0 1 29.5 44.28z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Warehouse</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="analytics" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                class="svg-inline--fa fa-analytics fa-w-18 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M510.62 92.63l-95.32 76.28a48.66 48.66 0 0 1 .7 7.09 48 48 0 0 1-96 0 47.44 47.44 0 0 1 .71-7.1l-95.33-76.27a45.11 45.11 0 0 1-29.66 1.59l-101.5 101.5A47.9 47.9 0 1 1 48 160a47.87 47.87 0 0 1 12.28 1.78l101.5-101.5A47.87 47.87 0 0 1 160 48a48 48 0 0 1 96 0 47.44 47.44 0 0 1-.71 7.1l95.32 76.26a46.5 46.5 0 0 1 34.76 0l95.34-76.27A48.66 48.66 0 0 1 480 48a48.36 48.36 0 1 1 30.62 44.63z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M400 320h-64a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V336a16 16 0 0 0-16-16zm160-128h-64a16 16 0 0 0-16 16v288a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V208a16 16 0 0 0-16-16zm-320 0h-64a16 16 0 0 0-16 16v288a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V208a16 16 0 0 0-16-16zM80 352H16a16 16 0 0 0-16 16v128a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V368a16 16 0 0 0-16-16z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Analytics</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="atom-alt" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-atom-alt fa-w-14 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M424.37305,55.69141C408.294,39.61914,385.50879,32,358.58252,32,319.82764,32,272.43359,48.127,224,77.14453a493.86641,493.86641,0,0,0-58.042,41.03711C140.58252,138.875,114.57666,162.5918,85.75635,197.916a374.25237,374.25237,0,0,0,35.70263,58.082A505.23427,505.23427,0,0,1,224,153.65625a377.23937,377.23937,0,0,1,58.042-35.47266c70.01221-34.334,95.22461-19.07421,97.0625-17.23632,9.54248,9.543,7.67432,46.94531-16.86084,96.96875A492.27615,492.27615,0,0,1,403.06543,256C452.27637,173.91992,463.59277,94.90039,424.37305,55.69141ZM224,358.3418a377.44678,377.44678,0,0,1-58.042,35.47461c-70.01221,34.334-95.22461,19.07421-97.0625,17.23632-9.54248-9.543-7.67432-46.94335,16.86084-96.96875A492.27615,492.27615,0,0,1,44.93457,256C-4.27637,338.08008-15.59277,417.09961,23.627,456.30664,39.70605,472.38086,62.49121,480,89.41748,480c38.75488,0,86.14893-16.127,134.58252-45.14453a493.86641,493.86641,0,0,0,58.042-41.03711c25.38965-20.70508,51.42285-44.45606,80.20166-79.73438A373.962,373.962,0,0,0,326.541,256,505.23427,505.23427,0,0,1,224,358.3418Z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M224,287.98828a31.99414,31.99414,0,1,0-32-31.99414A31.98908,31.98908,0,0,0,224,287.98828ZM121.46094,255.99805A374.13921,374.13921,0,0,1,85.7583,197.916c-24.53906-50.02344-26.40625-87.42579-16.86328-96.9668,1.83984-1.83789,27.05078-17.10156,97.062,17.23242A494.241,494.241,0,0,1,224,77.14453C175.5625,48.13086,128.16406,32,89.41846,32c-26.9336,0-49.707,7.61523-65.793,23.69141C-15.59326,94.90039-4.27686,173.91992,44.93408,256A492.0174,492.0174,0,0,0,85.7583,314.084c28.79639,35.30274,54.85889,59.07227,80.19873,79.73243A377.429,377.429,0,0,0,224,358.3418,505.131,505.131,0,0,1,121.46094,255.99805ZM403.06592,256a492.0174,492.0174,0,0,0-40.82422-58.084c-28.84326-35.35547-54.89795-59.10352-80.19873-79.73243A377.4073,377.4073,0,0,0,224,153.65625,505.20556,505.20556,0,0,1,326.53906,256a373.849,373.849,0,0,1,35.70264,58.084c24.53906,50.02149,26.40625,87.42383,16.86328,96.9668-1.83984,1.83789-27.05078,17.10156-97.062-17.23242A494.241,494.241,0,0,1,224,434.85547C272.4375,463.86914,319.83594,480,358.58154,480c26.9336,0,49.707-7.61523,65.793-23.69336C463.59326,417.09961,452.27686,338.08008,403.06592,256Z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Atom</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="ballot-check" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                class="svg-inline--fa fa-ballot-check fa-w-12 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M360 0H24A23.94 23.94 0 0 0 0 24v464a23.94 23.94 0 0 0 24 24h336a23.94 23.94 0 0 0 24-24V24a23.94 23.94 0 0 0-24-24zM161.7 202.4l12.6 12.7a5.37 5.37 0 0 1 0 7.6l-64.2 63.6a5.37 5.37 0 0 1-7.6 0L65.6 249a5.37 5.37 0 0 1 0-7.6l12.7-12.6a5.37 5.37 0 0 1 7.6 0l20.6 20.8 47.6-47.2a5.37 5.37 0 0 1 7.6 0zM64 112a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16zm64 288a16 16 0 0 1-16 16H80a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm192-8a8 8 0 0 1-8 8H168a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8zm-9.6-120H170.2s29.2-30.2 30.4-32h109.7c5.3 0 9.6 3.6 9.6 8v16h.1c0 4.4-4.3 8-9.6 8zm9.6-136a8 8 0 0 1-8 8H168a8 8 0 0 1-8-8v-16a8 8 0 0 1 8-8h144a8 8 0 0 1 8 8z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M80 160h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16zm94.3 55.1l-12.6-12.7a5.37 5.37 0 0 0-7.6 0l-47.6 47.2-20.6-20.8a5.37 5.37 0 0 0-7.6 0l-12.7 12.6a5.37 5.37 0 0 0 0 7.6l36.9 37.3a5.37 5.37 0 0 0 7.6 0l64.2-63.6a5.37 5.37 0 0 0 0-7.6zM112 352H80a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Ballot Check</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="briefcase" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="svg-inline--fa fa-briefcase fa-w-16 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M320 288h192v144c0 25.6-22.4 48-48 48H48c-25.6 0-48-22.4-48-48V288h192v48a16 16 0 0 0 16 16h96a16 16 0 0 0 16-16z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M464 128h-80V80c0-25.6-22.4-48-48-48H176c-25.6 0-48 22.4-48 48v48H48c-25.6 0-48 22.4-48 48v80h512v-80c0-25.6-22.4-48-48-48zm-144 0H192V96h128z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Briefcase</span>
+            </a>
+          </li>
+          <li class="nav-item static-item" tabindex="-1">
+            <span class="default-icon">Settings</span>
+            <span class="mini-icon">-</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="calendar" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-calendar fa-w-14 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M0 192v272a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V192zm304-64h32a16 16 0 0 0 16-16V16a16 16 0 0 0-16-16h-32a16 16 0 0 0-16 16v96a16 16 0 0 0 16 16zm-192 0h32a16 16 0 0 0 16-16V16a16 16 0 0 0-16-16h-32a16 16 0 0 0-16 16v96a16 16 0 0 0 16 16z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M448 112v80H0v-80a48 48 0 0 1 48-48h48v48a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V64h128v48a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16V64h48a48 48 0 0 1 48 48z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Calendar</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="coffee-togo" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-coffee-togo fa-w-14 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M48 160h352l-8 96H56zm330.67 256H69.33l-11-131.76 16.56 198.42A32 32 0 0 0 106.78 512h234.44a32 32 0 0 0 31.89-29.34l16.54-198.42z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M69.33 416h309.34L392 256H56zM432 64h-16l-23.16-46.31A32 32 0 0 0 364.22 0H83.78a32 32 0 0 0-28.62 17.69L32 64H16A16 16 0 0 0 0 80v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Coffee Togo</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="headset" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                class="svg-inline--fa fa-headset fa-w-16 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M192 464a48 48 0 0 1 48-48h32a48 48 0 0 1 48 48h101.72A42.28 42.28 0 0 0 464 421.72s0-163.29-.12-165.72h.12c0-114.69-93.31-208-208-208S48 141.31 48 256v16a16 16 0 0 1-16 16H16a16 16 0 0 1-16-16v-16C4.58 118.83 113.18 0 256 0s251.42 118.83 256 256v165.72A90.28 90.28 0 0 1 421.72 512H240a48 48 0 0 1-48-48z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor"
+                    d="M368 176h-16a32 32 0 0 0-32 32v112a32 32 0 0 0 32 32h16a64 64 0 0 0 64-64v-48a64 64 0 0 0-64-64zm-208 0h-16a64 64 0 0 0-64 64v48a64 64 0 0 0 64 64h16a32 32 0 0 0 32-32V208a32 32 0 0 0-32-32z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Headset</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="cog" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-3x">
+                <g class="fa-group">
+                  <path fill="currentColor"
+                    d="M487.75 315.6l-42.6-24.6a192.62 192.62 0 0 0 0-70.2l42.6-24.6a12.11 12.11 0 0 0 5.5-14 249.2 249.2 0 0 0-54.7-94.6 12 12 0 0 0-14.8-2.3l-42.6 24.6a188.83 188.83 0 0 0-60.8-35.1V25.7A12 12 0 0 0 311 14a251.43 251.43 0 0 0-109.2 0 12 12 0 0 0-9.4 11.7v49.2a194.59 194.59 0 0 0-60.8 35.1L89.05 85.4a11.88 11.88 0 0 0-14.8 2.3 247.66 247.66 0 0 0-54.7 94.6 12 12 0 0 0 5.5 14l42.6 24.6a192.62 192.62 0 0 0 0 70.2l-42.6 24.6a12.08 12.08 0 0 0-5.5 14 249 249 0 0 0 54.7 94.6 12 12 0 0 0 14.8 2.3l42.6-24.6a188.54 188.54 0 0 0 60.8 35.1v49.2a12 12 0 0 0 9.4 11.7 251.43 251.43 0 0 0 109.2 0 12 12 0 0 0 9.4-11.7v-49.2a194.7 194.7 0 0 0 60.8-35.1l42.6 24.6a11.89 11.89 0 0 0 14.8-2.3 247.52 247.52 0 0 0 54.7-94.6 12.36 12.36 0 0 0-5.6-14.1zm-231.4 36.2a95.9 95.9 0 1 1 95.9-95.9 95.89 95.89 0 0 1-95.9 95.9z"
+                    class="fa-secondary"></path>
+                  <path fill="currentColor" d="M256.35 319.8a63.9 63.9 0 1 1 63.9-63.9 63.9 63.9 0 0 1-63.9 63.9z"
+                    class="fa-primary"></path>
+                </g>
+              </svg>
+              <span class="item-name">Cog</span>
+            </a>
+          </li>
+          <li class="nav-item static-item" tabindex="-1">
+            <span class="default-icon">Credit</span>
+            <span class="mini-icon">-</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://fontawesome.com/v5.15/icons" target="_blank">
+              <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="font-awesome" role="img"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                class="svg-inline--fa fa-font-awesome fa-w-14 fa-3x">
+                <defs>
+                  <linearGradient id="fa-gradient">
+                    <stop class="fa-secondary" offset="0%" />
+                    <stop class="fa-primary" offset="100%" />
+                  </linearGradient>
+                </defs>
+                <path fill="url(#fa-gradient)"
+                  d="M400 32H48A48 48 0 0 0 0 80V432a48 48 0 0 0 48 48H400a48 48 0 0 0 48-48V80A48 48 0 0 0 400 32ZM336 312c-31.6 11.2-41.2 16-59.8 16-31.4 0-43.2-16-74.6-16a80 80 0 0 0-25.6 4V284a85.9 85.9 0 0 1 25.6-4c31.2 0 43.2 16 74.6 16 10.2 0 17.8-1.4 27.8-4.6v-96c-10 3.2-17.6 4.6-27.8 4.6-31.4 0-43.2-16-74.6-16-25.4 0-37.4 10.4-57.6 14.4V352a16 16 0 0 1-32 0V160a16 16 0 0 1 32 0v6.4c20.2-4 32.2-14.4 57.6-14.4 31.2 0 43.2 16 74.6 16 18.6 0 28.2-4.8 59.8-16Z"
+                  class=""></path>
+              </svg>
+              <span class="item-name">Icons by FontAwesome</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Sidebar Menu Ends -->
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h1>This is a BIG Heading :3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi est rem sapiente nam sit quis, deserunt eius
+      ducimus soluta magnam quas vel possimus quasi distinctio doloremque laborum odio. Magnam, quas.</p>
+    <h2>Sub heading 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi rerum veritatis maiores repellat a unde
+      doloribus, minus atque nemo dolorum aperiam reprehenderit est iste id nulla laborum reiciendis in. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Natus, quas nostrum temporibus ipsam recusandae neque fugiat! Vitae
+      molestias tempora velit. Qui, commodi odio natus mollitia laboriosam a laudantium assumenda laborum.
+      Libero magni totam eius dolore modi dicta numquam error voluptas, facilis rem consequatur placeat minus
+      consectetur soluta veniam, eligendi ullam debitis laboriosam iusto eveniet sit eaque deserunt delectus!
+      Consequuntur, debitis!</p>
+    <h2>Sub heading 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi rerum veritatis maiores repellat a unde
+      doloribus, minus atque nemo dolorum aperiam reprehenderit est iste id nulla laborum reiciendis in. Lorem ipsum
+      dolor sit amet consectetur, adipisicing elit. Voluptatibus error necessitatibus consequuntur sint repellat animi
+      consequatur nulla repudiandae esse? Ex sequi reiciendis harum illo cumque corporis ut distinctio? Quam, aliquam.
+      Alias ab aspernatur similique est incidunt laudantium eveniet repudiandae, impedit ullam dicta ipsam aliquid ipsa
+      accusantium unde neque? At rem veritatis cumque nisi repudiandae saepe repellat dolorum placeat sunt quos!</p>
+    <h2>Sub heading 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi rerum veritatis maiores repellat a unde
+      doloribus, minus atque nemo dolorum aperiam reprehenderit est iste id nulla laborum reiciendis in. Lorem ipsum
+      dolor sit amet consectetur, adipisicing elit. Voluptatibus error necessitatibus consequuntur sint repellat animi
+      consequatur nulla repudiandae esse? Ex sequi reiciendis harum illo cumque corporis ut distinctio? Quam, aliquam.
+      Alias ab aspernatur similique est incidunt laudantium eveniet repudiandae, impedit ullam dicta ipsam aliquid ipsa
+      accusantium unde neque? At rem veritatis cumque nisi repudiandae saepe repellat dolorum placeat sunt quos!</p>
+    <h2>Sub heading 4</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat animi rerum veritatis maiores repellat a unde
+      doloribus, minus atque nemo dolorum aperiam reprehenderit est iste id nulla laborum reiciendis in. Lorem ipsum
+      dolor sit amet consectetur, adipisicing elit. Voluptatibus error necessitatibus consequuntur sint repellat animi
+      consequatur nulla repudiandae esse? Ex sequi reiciendis harum illo cumque corporis ut distinctio? Quam, aliquam.
+      Alias ab aspernatur similique est incidunt laudantium eveniet repudiandae, impedit ullam dicta ipsam aliquid ipsa
+      accusantium unde neque? At rem veritatis cumque nisi repudiandae saepe repellat dolorum placeat sunt quos!</p>
+  </main>
+</body>
+
+</html>
